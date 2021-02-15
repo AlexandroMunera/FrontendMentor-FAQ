@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-repeat: no-repeat;
+  font-size: 14px;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: #fff;
+}
+
+.container {
+  min-height: 98vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #fff;
+  width: 90%;
+  height: 75vh;
+  border-radius: 25px;
+  box-shadow: 0 4px 50px -15px black;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 100px;
+}
+
+.image {
+  position: relative;
+  top: -106px;
+  left: 27px;
+  width: 290px;
+}
+
+.imageBG {
+  position: relative;
+  top: -196px;
+  left: 63px;
+  width: 250px;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+}
+
+.divQuestions {
+  height: 70vh;
+  padding: 0 20px;
+  text-align: start;
+  position: relative;
+  top: -200px;
+}
+
+.divider {
+  border: 1px solid hsl(240, 5%, 91%);
+  margin: 15px 0;
+}
+
+.question > summary {
+  cursor: pointer;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.question > summary::-webkit-details-marker {
+  position: absolute;
+  right: 35px;
+  transform: translateY(50%);
+  background: url("images/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  color: transparent;
+}
+
+.question[open] summary {
+  font-weight: bold;
+}
+
+.question[open] summary::-webkit-details-marker {
+  transform: rotate(180deg);
+}
+
+.imageBox {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .title {
+    width: 350px;
+  }
+  .card {
+    flex-direction: row;
+    height: 60vh;
+    margin-top: 0;
+  }
+
+  .image {
+    top: 15%;
+    left: -60px;
+    width: 388px;
+  }
+
+  .divQuestions {
+    top: 0;
+    left: -230px;
+    height: auto;
+  }
+
+  .imageBG {
+    position: relative;
+    top: -383px;
+    left: -295px;
+    width: 622px;
+  }
+
+  .imageBox {
+    display: inline;
+    position: relative;
+    right: 200px;
+    top: 36px;
+    width: 129px;
+  }
+}
